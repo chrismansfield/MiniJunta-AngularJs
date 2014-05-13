@@ -1,0 +1,17 @@
+﻿<section>
+    <h1>Skapa ny kurs!</h1>
+    <div>
+        <input type="text" placeholder="Namn" ng-model="name" />
+    </div>
+    <div>
+        <textarea placeholder="Beskrivning" ng-model="description"></textarea>
+    </div>
+    <div>
+        <select ng-model="type" ng-options="courseType.Value as courseType.Text for courseType in courseTypes"></select>
+    </div>
+    <div>
+        <button ng-click="saveCourse()">Click me!</button>
+    </div>
+
+
+</section>

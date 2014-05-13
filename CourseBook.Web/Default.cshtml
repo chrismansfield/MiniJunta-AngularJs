@@ -1,0 +1,44 @@
+﻿@using System.Reflection
+<!DOCTYPE html>
+<html ng-app="courseBook">
+<head>
+    <title></title>
+    <link href="~/app/lib/jquery-ui-1.10.4.custom/css/ui-lightness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" />
+    <style>
+        nav > ul > li {
+            display: inline;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#NewCourse">New Course</a></li>
+        </ul>
+    </nav>
+
+    <ng-view></ng-view>
+    
+    
+    <script src="~/app/lib/jquery-2.1.1.min.js"></script>
+    <script src="~/app/lib/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js"></script>
+
+    <script src="~/app/lib/angular.min.js"></script>
+    <script src="~/app/lib/angular-animate.min.js"></script>
+    <script src="~/app/lib/angular-resource.min.js"></script>
+    <script src="~/app/lib/angular-route.min.js"></script>
+
+    <script src="~/app/app.js"></script>
+
+    <script src="~/app/controllers/newCourseController.js"></script>
+    <script src="~/app/controllers/HomeController.js"></script>
+    <script src="~/app/controllers/msgControllers.js"></script>
+
+    <script src="~/app/services/courseService.js"></script>
+
+    <script src="~/app/directives/datepicker.js"></script>
+</body>
+</html>

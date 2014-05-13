@@ -1,0 +1,27 @@
+﻿<div>
+
+    <datepicker ng-model="YepThisWorks" />
+
+    <h1>Alla kurser!</h1>
+    <div ng-repeat="blubb in courses">
+        <h2>
+            {{blubb.Name}}
+        </h2>
+        <p>
+            {{blubb.Description}}
+        </p>
+        <type-view course-type="blubb.CourseType" />
+        <a href="#/EditCourse/{{blubb.CourseId}}">Redigera</a>
+    </div>
+    
+    
+    <div ng-controller="textController">
+        <span>{{text}}</span>
+    </div>
+    
+    <div ng-controller="inputController">
+        <textarea ng-model="input"></textarea>
+    </div>
+    
+
+</div>
